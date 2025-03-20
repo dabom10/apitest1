@@ -21,7 +21,7 @@ data = [
 ]
 
 # CSV 파일로 저장
-with open('power_usage.csv', mode='w', newline='', encoding='utf-8') as file:
+with open('power_usage.csv', mode='w', newline='', encoding='EUC-KR') as file:
     writer = csv.DictWriter(file, fieldnames=["year", "month", "metro", "city", "houseCnt", "powerUsage", "bill"])
     
     # 헤더 작성
